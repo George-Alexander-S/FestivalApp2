@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Metal Lord";
+    src: local("Metal Lord"),
+    url("./fonts/metal lord.ttf") format("truetype");
+    font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#customItem {
+    font-family: "Metal Mania";
+    margin-top: 15px;
+}
+
+#burgerTitle {
+    font-family: Metal Mania, cursive;
+}
+
+h1 {
+    font-family: Metal Mania, cursive;
+}
+
+#whos-next {
+    font-family: "Metal Lord";
+}
+#playtimes {
+    font-family: "Metal Mania";
+}
+#charten {
+    overflow: scroll;
 }
