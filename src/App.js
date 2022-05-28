@@ -122,10 +122,10 @@ function App() {
                       setOpenChart(false)
                   }
               }}>
-                  <h2 className="text-left mt-3 ml-3 mb-3 font-bold">Who's next: </h2>
-                  <p className="text-4xl" id={"whos-next"}>IRON MAIDEN</p>
-                  <h2 className="text-left ml-3 mb-5 mt-5 font-bold">Time: 21:00</h2>
-                  <h2 className="text-left ml-3 mb-5 font-bold">Where: Main Stage</h2>
+                  <h2 className="text-lg text-left mt-3 ml-3 mb-3 font-bold">Who's next: </h2>
+                  <p className="text-3xl" id={"whos-next"}>IRON MAIDEN</p>
+                  <h2 className="text-lg text-left ml-3 mb-5 mt-5 font-bold">Time: 21:00</h2>
+                  <h2 className="text-lg text-left ml-3 mb-5 font-bold">Main Stage</h2>
                   <h2 className="ml-3 mb-5 font-bold underline underline-offset-2">Click to open/close full schedule!</h2>
               </button>
               {openChart && <Timeline closeChart={setOpenChart}/>}
