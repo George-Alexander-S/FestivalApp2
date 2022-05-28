@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Gromfader/FestivalApp2/static/css/main.04e4147f.css",
+    "main.js": "/Gromfader/FestivalApp2/static/js/main.35192991.js",
+    "static/media/FestivalSpace.png": "/Gromfader/FestivalApp2/static/media/FestivalSpace.85033e1d9e432f0c0c34.png",
+    "static/media/festmap.png": "/Gromfader/FestivalApp2/static/media/festmap.e2094546b95f1007d4a7.png",
+    "static/media/metal lord.ttf": "/Gromfader/FestivalApp2/static/media/metal lord.59d32bd9de1da23c3304.ttf",
+    "index.html": "/Gromfader/FestivalApp2/index.html",
+    "main.04e4147f.css.map": "/Gromfader/FestivalApp2/static/css/main.04e4147f.css.map",
+    "main.35192991.js.map": "/Gromfader/FestivalApp2/static/js/main.35192991.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04e4147f.css",
+    "static/js/main.35192991.js"
+  ]
+}
