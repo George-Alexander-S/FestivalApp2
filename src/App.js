@@ -57,34 +57,7 @@ function App() {
     }
     /*END "Close Band Timeline when clicking outside div"*/
 
-    /*START Announcement Modal popup*/
-    //State is a boolean, initial false. Modalen heter openModal. setOpenModal er funksjonen som muterer/endrer Modalen
-    /*const [openModal, setOpenModal] = useState(false);*/
-
-    /*const ref = useRef(); /!*Må huske å lære mer fra Usehooks.com*!/
-    useOnClickOutside(ref, () => handleShow(false));*/
-    /*END Announcement Modal popup*/
-
-    /*START "Close ANNOUNCEMENTS when clicking outside div"*/
-    /*function useOnClickOutside(ref, handler) {
-        useEffect( () => {
-                const listener = (event) => {
-                    if (!ref.current || ref.current.contains(event.target)) {
-                        return;
-                    }
-                    handler(event);
-                };
-                document.addEventListener("mousedown", listener);
-                document.addEventListener("touchstart", listener);
-
-                return () => {
-                    document.removeEventListener("mousedown", listener);
-                    document.removeEventListener("touchstart", listener);
-                };
-            },
-            [ref, handler]);
-    }*/
-    /*END "Close when clicking outside div"*/
+    /*Må huske å lære mer fra Usehooks.com*/
 
     /*START weather widget data*/
     const { data, isLoading, errorMessage } = useOpenWeather({
@@ -95,7 +68,6 @@ function App() {
         unit: 'metric',
     });
     /*END weather widget data*/
-
 
   return ( /*START HEADER*/
 
@@ -108,7 +80,6 @@ function App() {
           </div>
           <div className="flex justify-left">
               <GiGuitarBassHead className="text-5xl mb-3 text-center"/><AnnouncementMain/></div>
-
 
           {/*END HEADER*/}
 
