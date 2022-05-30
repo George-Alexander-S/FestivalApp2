@@ -90,7 +90,7 @@ const Home = () => {
 
                 </div>
                 <div>
-                    <h3 id="scream">Scream Stage</h3>
+                    <h3 id="scream">Shout Stage</h3>
                     <h2 id="band">Death To All</h2>
                     <hr
                         style={{
@@ -98,7 +98,7 @@ const Home = () => {
                             height: '3px',
                         }}
                     />
-                    <h3 id="vampire">Vampire Stage</h3>
+                    <h3 id="vampire">Monster Stage</h3>
                     <h2 id="band">Spidergawd</h2>
 
                 </div>
@@ -108,15 +108,15 @@ const Home = () => {
 
                 </div>
                 <div>
-                    <h3 id="vampire">Vampire Stage</h3>
+                    <h3 id="vampire">Monster Stage</h3>
                     <h2 id="band">Spiritbox</h2>
                 </div>
                 <div>
-                    <h3 id="scream">Scream Stage</h3>
+                    <h3 id="scream">Shout Stage</h3>
                     <h2 id="band">Enslaved</h2>
                 </div>
                 <div>
-                    <h3 id="vampire">Vampire Stage</h3>
+                    <h3 id="vampire">Monster Stage</h3>
                     <h2 id="band">Fire From The Gods</h2>
                 </div>
                 <div>
@@ -124,15 +124,15 @@ const Home = () => {
                     <h2 id="band">Europe</h2>
                 </div>
                 <div>
-                    <h3 id="vampire">Vampire Stage</h3>
+                    <h3 id="vampire">Monster Stage</h3>
                     <h2 id="band">Raised Fist</h2>
                 </div>
                 <div>
-                    <h3 id="scream">Scream Stage</h3>
+                    <h3 id="scream">Shout Stage</h3>
                     <h2 id="band">Baroness</h2>
                 </div>
                 <div>
-                    <h3 id="vampire">Vampire Stage</h3>
+                    <h3 id="vampire">Monster Stage</h3>
                     <h2 id="band">Hedvig Mollestad Trio</h2>
                 </div>
                 <div>
@@ -140,7 +140,7 @@ const Home = () => {
                     <h2 id="band">Mastodon</h2>
                 </div>
                 <div>
-                    <h3 id="vampire">Vampire Stage</h3>
+                    <h3 id="vampire">Monster Stage</h3>
                     <h2 id="band">Hypocrisy</h2>
                     <hr
                         style={{
@@ -148,7 +148,7 @@ const Home = () => {
                             height: '3px',
                         }}
                     />
-                    <h3 id="scream">Scream Stage</h3>
+                    <h3 id="scream">Shout Stage</h3>
                     <h2 id="band">Sum 41</h2>
                 </div>
                 <div>
