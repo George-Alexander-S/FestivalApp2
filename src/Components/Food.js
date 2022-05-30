@@ -1,6 +1,6 @@
 import React from "react";
 import {IoIosRestaurant} from "react-icons/io";
-import bilde from "./FestivalSpace.png";
+import bilde from "./nearestfood.jpeg";
 
 
 export default class Food extends React.Component {
@@ -18,11 +18,11 @@ export default class Food extends React.Component {
                 </button>
                 {this.state.isOpen && (
                     <dialog
-                        className="dialog"
+                        className="dialog z-50"
                         style={{ position: "absolute", width: 800 }}
                         open
                         onClick={this.handleShowDialog}
-                    >
+                    ><h1 className="flex justify-center text-xl">Press image to close</h1>
                         <img
                             src={bilde} width={800} height={600}
                             className="image"

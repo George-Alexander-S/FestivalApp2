@@ -1,6 +1,6 @@
 import React from "react";
 import {FaRestroom} from "react-icons/fa";
-import bilde from "./festmap.png";
+import bilde from "./toilettest.jpeg";
 
 
 export default class Restroom extends React.Component {
@@ -18,11 +18,11 @@ export default class Restroom extends React.Component {
                 </button>
                 {this.state.isOpen && (
                     <dialog
-                        className="dialog"
+                        className="dialog z-50"
                         style={{ position: "absolute", width: 800 }}
                         open
                         onClick={this.handleShowDialog}
-                    >
+                    ><h1 className="flex justify-center text-xl">Press image to close</h1>
                         <img
                             src={bilde} width={800} height={600}
                             className="image"
