@@ -55,8 +55,6 @@ function App() {
     }
     /*END "Close Band Timeline when clicking outside div"*/
 
-    /*Må huske å lære mer fra Usehooks.com*/
-
     /*START weather widget data*/
     const { data, isLoading, errorMessage } = useOpenWeather({
         key: '7c0eff8c2c822d3e88a5a5cea94e021c',
@@ -132,7 +130,6 @@ function App() {
           {/*END FORECAST*/}
 
           <div>
-
           </div>
       </div>
   );
