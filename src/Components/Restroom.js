@@ -22,7 +22,7 @@ export default class Restroom extends React.Component {
                         style={{ position: "absolute", width: 800 }}
                         open
                         onClick={this.handleShowDialog}
-                    ><h1 className="flex justify-center text-xl">Press image to close</h1>
+                    ><h1 className="flex text-xl">Press image to close</h1>
                         <img
                             src={bilde} width={800} height={600}
                             className="image"

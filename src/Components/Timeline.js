@@ -69,7 +69,7 @@ const Home = () => {
         ];
 
     return (
-        <div style={{ width: "320px", height: "400px",}}>
+        <div style={{ width: "320px", height: "450px",}}>
             <Chrono items={items}
 
                     cardHeight={100}
@@ -92,6 +92,12 @@ const Home = () => {
                 <div>
                     <h3 id="scream">Scream Stage</h3>
                     <h2 id="band">Death To All</h2>
+                    <hr
+                        style={{
+                            background: '#000000',
+                            height: '3px',
+                        }}
+                    />
                     <h3 id="vampire">Vampire Stage</h3>
                     <h2 id="band">Spidergawd</h2>
 
@@ -136,6 +142,12 @@ const Home = () => {
                 <div>
                     <h3 id="vampire">Vampire Stage</h3>
                     <h2 id="band">Hypocrisy</h2>
+                    <hr
+                        style={{
+                            background: '#000000',
+                            height: '3px',
+                        }}
+                    />
                     <h3 id="scream">Scream Stage</h3>
                     <h2 id="band">Sum 41</h2>
                 </div>
