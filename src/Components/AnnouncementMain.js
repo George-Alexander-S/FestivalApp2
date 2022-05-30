@@ -21,7 +21,7 @@ export default class AnnouncementMain extends React.Component {
                 </button>
                 {this.state.isOpen && (
                     <dialog
-                        className="dialog"
+                        className="dialog z-50"
                         style={{ position: "absolute", width: 330, height: 480, background: "#ffeac2", borderStyle: "double", borderWidth: "10px", borderColor: "#f77f00", borderRadius: "30px" }}
                         open
                         onClick={this.handleShowDialog}
