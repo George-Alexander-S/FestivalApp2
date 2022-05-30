@@ -1,7 +1,8 @@
 import {useState, useEffect, useRef} from "react";
 import React from "react";
 import {GiGuitarBassHead} from "react-icons/gi";
-import ReactWeather, { useOpenWeather } from 'react-open-weather';
+import {AiFillSchedule} from "react-icons/ai";
+import ReactWeather, {useOpenWeather} from 'react-open-weather';
 import './fonts/metal lord.ttf';
 import BurgerMenu from "./Components/BurgerMenu";
 import Restroom from "./Components/Restroom";
@@ -68,7 +69,7 @@ function App() {
 
   return ( /*START HEADER*/
 
-      <div className="App container mx-auto mt-3 max-w-xs">
+      <div id="background" className="App container mx-auto mt-3 max-w-xs ">
           <BurgerMenu />
           <div>
               <header>
@@ -81,24 +82,26 @@ function App() {
           {/*END HEADER*/}
 
           {/*START: WHO's NEXT:*/}
-          <div ref={chartRef}>
-              <button className="bg-gray-200 w-full rounded-md border-r-8 border-t-4 border-l-4 border-b-4 border-l-amber-500 border-t-amber-500 border-r-amber-700 border-b-amber-700" onClick={() => {
-                  if (openChart === false) {
-                      setOpenChart(true)
-                  }
-                  else if (openChart === true) {
-                      setOpenChart(false)
-                  }
-              }}>
-                  <h2 className="text-lg text-left mt-3 ml-3 mb-3 font-bold">Coming up: </h2>
-                  <h2 id="main" className="text-lg text-left ml-3 mb-5 font-bold">Main Stage</h2>
-                  <p className="text-3xl" id={"whos-next"}>IRON MAIDEN</p>
-                  <h2 className="text-lg text-left ml-3 mb-5 mt-5 font-bold">Time: 21:00</h2>
-
-                  <h2 className="ml-3 mb-5 font-bold underline underline-offset-2">Click to open/close full schedule!</h2>
-              </button>
-              {openChart && <Timeline closeChart={setOpenChart}/>}
+          <div id="next" >
+              <div id="nextText">
+              <h2 className="text-left ml-10 mb-1 mt-1 font-bold">Coming up on: </h2>
+              <h2 id="mainApp" className="text-lg text-left ml-10 mb-2 font-bold">Main Stage</h2>
+              <p className="text-3xl ml-12" id="whos-next">IRON MAIDEN</p>
+              <h2 className="text-sm text-center font-bold">Time: 21:00</h2>
+              </div>
           </div>
+              <div className="mt-3 relative" ref={chartRef}><p className="text-center font-bold">Band List</p>
+                  <button id="fullList" className="hover:bg-red-100 text-5xl py-1.5 pr-2 pl-2 rounded-3xl border-2" onClick={() => {
+                      if (openChart === false) {
+                          setOpenChart(true)
+                      }
+                      else if (openChart === true) {
+                          setOpenChart(false)
+                      }
+                  }}><AiFillSchedule/>
+                  </button>
+                  {openChart && <Timeline/>}
+              </div>
           {/*END: WHO's NEXT:*/}
 
           {/*START BUTTONS*/}

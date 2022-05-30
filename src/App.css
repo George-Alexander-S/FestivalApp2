@@ -1,24 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=New+Rocker&display=swap');
 
-#main {
+#background {
+    background-color: #ffffff;
+}
+#next {
+    margin-top: 10px;
+    background-image: url("./ticketblurred.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 320px;
+    background-color: #ffffff;
+    width: 320px;
+    height: 170px;
+    /*
+    box-shadow: -2px 0px 16px 6px rgba(248, 91, 6, 0.77);
+    */
+}
+#nextText {
+    position: absolute;
+    margin-top: 10px;
+}
+
+#fullList {
+    margin-left: 125px;
+    color: #fc2424;
+    font-size: 50px;
+    /*border-color: #d20c0c;*/
+}
+#mainApp {
     font-family: Metal Mania;
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bold;
     color: #da3434;
 }
-#scream {
+#screamApp {
     font-family: New Rocker;
     font-size: 20px;
     font-weight: bold;
     color: #485b83;
 }
-#vampire {
+#vampireApp {
     font-family: Creepster ;
     font-size: 20px;
     font-weight: normal;
     color: #289218;
 }
-#band {
+#bandApp {
     font-weight: bold;
     margin-bottom: 3px;
 }
