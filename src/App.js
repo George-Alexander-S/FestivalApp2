@@ -91,7 +91,7 @@ function App() {
               </div>
           </div>
               <div className="mt-3 relative" ref={chartRef}><p className="text-center font-bold">Band List</p>
-                  <button id="fullList" className="hover:bg-red-100 text-5xl py-1.5 pr-2 pl-2 rounded-3xl border-2" onClick={() => {
+                  <button id="fullList" className="bg-red-50 hover:bg-red-100 text-5xl py-2.5 pr-4 pl-4 rounded-3xl border-2 border-gray-400" onClick={() => {
                       if (openChart === false) {
                           setOpenChart(true)
                       }
@@ -105,7 +105,7 @@ function App() {
           {/*END: WHO's NEXT:*/}
 
           {/*START BUTTONS*/}
-          <div className="flex justify-evenly mb-10 mt-4">
+          <div className="flex justify-evenly mb-5 mt-4">
           <Restroom/>
           <Food/>
           <FullMap/>
@@ -113,7 +113,7 @@ function App() {
           {/*END BUTTONS*/}
 
           {/*START FORECAST*/}
-          <div className="mt-5 flex justify-center">
+          <div className="flex justify-center">
               <h1 className="mb-6 text-3xl">
                   Todays Forecast
               </h1>
