@@ -22,8 +22,11 @@ export default class About extends React.Component {
                         open
                         onClick={this.handleShowDialog}
                     >
-                        <p className="font-bold">Welcome to the Festival App! All the important functions are available right on the main screen!
-                        </p><br/><p className="font-bold flex justify-center">&#129304;Enjoy!&#129304;</p>
+                        <p className="font-bold">Welcome to the Festival App!
+                        </p><br/>
+                        <p> All the important functions are available right on the main screen!</p>
+                        <br/>
+                        <p className="font-bold flex justify-center">&#129304;Enjoy!&#129304;</p>
                     </dialog>
                 )}
             </div>
