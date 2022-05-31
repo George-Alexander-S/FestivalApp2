@@ -2,6 +2,7 @@ import {useState, useEffect, useRef} from "react";
 import React from "react";
 import {GiGuitarBassHead} from "react-icons/gi";
 import {AiFillSchedule} from "react-icons/ai";
+
 import ReactWeather, {useOpenWeather} from 'react-open-weather';
 import './fonts/metal lord.ttf';
 import BurgerMenu from "./Components/BurgerMenu";
@@ -14,11 +15,6 @@ import './App.css';
 function App() {
 
 
-
-    /*TEST*/
-        /*const [openDemo, setOpenDemo] = useState(false);
-        const demoRef = useRef();*/
-    /*TEST*/
 
     /*START Burgermenu*/
     React.useEffect(() => {
@@ -88,30 +84,23 @@ function App() {
               <h2 className="text-sm text-center font-bold">Time: 21:00</h2>
               </div>
           </div>
-              <div className="mt-3 relative" ref={chartRef}><p className="text-center font-bold">Band List</p>
-                  <button id="fullList" className="bg-red-50 hover:bg-red-100 text-5xl py-2.5 pr-4 pl-4 rounded-3xl border-2 border-gray-400" onClick={() => {
-                      if (openChart === false) {
-                          setOpenChart(true)
-                      }
-                      else if (openChart === true) {
-                          setOpenChart(false)
-                      }
-                  }}><AiFillSchedule/>
-                  </button>
-                  {openChart && <Timeline/>}
-              </div>
           {/*END: WHO's NEXT:*/}
-
-          {/*START BUTTONS*/}
-          <div className="flex justify-evenly mb-5 mt-4">
-          <Restroom/>
-          <Food/>
-          <FullMap/>
+          {/*START Band List*/}
+          <div className="mt-4 relative" ref={chartRef}><p className="text-center font-bold">Band List</p>
+              <button id="fullList" className="bg-red-50 hover:bg-red-100 text-5xl py-2.5 pr-4 pl-4 rounded-3xl border-2 border-gray-400" onClick={() => {
+                  if (openChart === false) {
+                      setOpenChart(true)
+                  }
+                  else if (openChart === true) {
+                      setOpenChart(false)
+                  }
+              }}><AiFillSchedule/>
+              </button>
+              {openChart && <Timeline/>}
           </div>
-          {/*END BUTTONS*/}
-
+          {/*END Band List*/}
           {/*START FORECAST*/}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-5">
               <h1 className="mb-6 text-3xl">
                   Todays Forecast
               </h1>
@@ -124,10 +113,18 @@ function App() {
                   lang="en"
                   locationLabel="Ekebergsletta"
                   unitsLabels={{ temperature: 'C', windSpeed: 'Km/h' }}
-                  showForecast
+                  showForecast={false}
               />
           </div>
           {/*END FORECAST*/}
+
+          {/*START BUTTONS*/}
+          <div className="flex justify-evenly mb-5 mt-4">
+          <Restroom/>
+          <Food/>
+          <FullMap/>
+          </div>
+          {/*END BUTTONS*/}
 
           <div>
           </div>
