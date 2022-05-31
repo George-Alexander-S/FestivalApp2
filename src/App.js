@@ -99,9 +99,17 @@ function App() {
               {openChart && <Timeline/>}
           </div>
           {/*END Band List*/}
+
+          {/*START BUTTONS*/}
+          <div className="flex justify-evenly mb-5 mt-4">
+              <Restroom/>
+              <Food/>
+              <FullMap/>
+          </div>
+          {/*END BUTTONS*/}
           {/*START FORECAST*/}
           <div className="flex justify-center mt-5">
-              <h1 className="mb-6 text-3xl">
+              <h1 className="mb-3 text-3xl">
                   Todays Forecast
               </h1>
           </div>
@@ -113,21 +121,12 @@ function App() {
                   lang="en"
                   locationLabel="Ekebergsletta"
                   unitsLabels={{ temperature: 'C', windSpeed: 'Km/h' }}
-                  showForecast={false}
+                  showForecast
               />
           </div>
           {/*END FORECAST*/}
 
-          {/*START BUTTONS*/}
-          <div className="flex justify-evenly mb-5 mt-4">
-          <Restroom/>
-          <Food/>
-          <FullMap/>
-          </div>
-          {/*END BUTTONS*/}
 
-          <div>
-          </div>
       </div>
   );
 }
