@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FestivalApp2/static/css/main.610e18d1.css",
-    "main.js": "/FestivalApp2/static/js/main.835d3627.js",
+    "main.js": "/FestivalApp2/static/js/main.5bfa934d.js",
     "static/media/ticketblurred.png": "/FestivalApp2/static/media/ticketblurred.f2d9685f908c61bd06b6.png",
     "static/media/metal lord.ttf": "/FestivalApp2/static/media/metal lord.59d32bd9de1da23c3304.ttf",
     "static/media/festivalgrounds.jpeg": "/FestivalApp2/static/media/festivalgrounds.15e21585d087f0b940c7.jpeg",
@@ -9,10 +9,10 @@
     "static/media/nearestfood.jpeg": "/FestivalApp2/static/media/nearestfood.8d9c2b15d79f7c850e6c.jpeg",
     "index.html": "/FestivalApp2/index.html",
     "main.610e18d1.css.map": "/FestivalApp2/static/css/main.610e18d1.css.map",
-    "main.835d3627.js.map": "/FestivalApp2/static/js/main.835d3627.js.map"
+    "main.5bfa934d.js.map": "/FestivalApp2/static/js/main.5bfa934d.js.map"
   },
   "entrypoints": [
     "static/css/main.610e18d1.css",
-    "static/js/main.835d3627.js"
+    "static/js/main.5bfa934d.js"
   ]
 }
