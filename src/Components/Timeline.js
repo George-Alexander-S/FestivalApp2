@@ -69,7 +69,7 @@ const Home = () => {
         ];
 
     return (
-        <div style={{ width: "320px", height: "450px",}}>
+        <div style={{ width: "320px", height: "450px",}}> <p className="text-center font-bold">Tap to close</p>
             <Chrono items={items}
 
                     cardHeight={100}
