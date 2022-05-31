@@ -108,10 +108,11 @@ function App() {
           </div>
           {/*END BUTTONS*/}
           {/*START FORECAST*/}
-          <div className="flex justify-center mt-5">
-              <h1 className="mb-3 text-3xl">
+          <div className="mt-5">
+              <h1 className="text-3xl text-center">
                   Todays Forecast
               </h1>
+              <p className="text-center">with tomorrows underneath</p>
           </div>
           <div>
               <ReactWeather
